@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Test">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/titlecarousel"
+        android:text="Destination List"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <com.synnapps.carouselview.CarouselView
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="6dp"
+        app:fillColor="#000"
+        app:pageColor="#FFF"
+        app:slideInterval="3000"
+        app:radius="6dp"
+        app:strokeWidth="6dp"
+        app:strokeColor="#FF777777"
+        android:id="@+id/carousel">
+    </com.synnapps.carouselview.CarouselView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="More destination"
+        android:textSize="20sp"/>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager">
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

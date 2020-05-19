@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="umn.ac.id.tugasakhir">
+
+    <uses-permission android:name="android.pemission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="umn.ac.id.tugasakhir.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+        <activity android:name=".PaymentActivity"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".EditprofileActivity" />
+        <activity android:name=".MyprofileActivity" />
+        <activity
+            android:name=".ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DatePickerActivity" />
+        <activity android:name=".Test" />
+        <activity android:name=".MoveFragmentActivity" />
+        <activity android:name=".NewGuideActivity" />
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".UploadpaymentActivity" />
+        <activity android:name=".DestinationlistActivity" />
+        <activity android:name=".ReviewActivity" />
+        <activity android:name=".GuideprofileActivity" />
+        <activity
+            android:name=".GuidelistActivity"
+            android:parentActivityName=".DestinationActivity" />
+        <activity android:name=".DestinationActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

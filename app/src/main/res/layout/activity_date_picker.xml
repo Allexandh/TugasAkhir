@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatePickerActivity">
+
+
+
+    <TextView
+        android:id="@+id/availabledates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available Dates"/>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear1"
+        android:layout_below="@+id/availabledates"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:textSize="20sp" />
+
+
+
+        <TextView
+            android:id="@+id/textAwalTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/0/0"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/btnAwalTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/linear1"
+        android:layout_marginTop="19dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:textSize="20sp" />
+
+
+
+        <TextView
+            android:id="@+id/textAkhirTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/0/0"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/btnAkhirTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="22dp"
+        android:text="Book" />
+
+</RelativeLayout>

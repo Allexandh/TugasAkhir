@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "771076047713",
+    "firebase_url": "https://cultour-1a8d2.firebaseio.com",
+    "project_id": "cultour-1a8d2",
+    "storage_bucket": "cultour-1a8d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771076047713:android:8379a3490de19b35ba3b20",
+        "android_client_info": {
+          "package_name": "umn.ac.id.tugasakhir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771076047713-sggvf91lqoujin31gslt9ppd02a1shvs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "umn.ac.id.tugasakhir",
+            "certificate_hash": "4473262fc210c0d6d97661c7af6e5b8a5f4c55a7"
+          }
+        },
+        {
+          "client_id": "771076047713-ao0ppu6n4bgc8bq46s1f2jnuepovd4kg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "umn.ac.id.tugasakhir",
+            "certificate_hash": "d386e8832942c93aca94257d78c4b98dd79941f1"
+          }
+        },
+        {
+          "client_id": "771076047713-6lulbu0rfblh32cvi8tk09u60llndd11.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXbwekvJac9VApXHkwKKuwL0yR7LI3D28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771076047713-6lulbu0rfblh32cvi8tk09u60llndd11.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
